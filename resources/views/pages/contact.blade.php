@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="card mt-3 pl-2 pr-2">
+    <div class="card mt-3 pt-2 pl-4 pr-4">
         <div class="card-title">
             <h1>Welcome to the Contact Page</h1>
             <p class="lead">Please use this form to contact me.</p>
@@ -10,6 +10,10 @@
         <div class="card-body">
             <form action="/contact" method="post">
                 @csrf
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="John Smith">
+                </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
