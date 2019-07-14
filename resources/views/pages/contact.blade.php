@@ -8,7 +8,7 @@
             <p class="lead">Please use this form to contact me.</p>
         </div>
         <div class="card-body">
-            <form action="/contact" method="post">
+            <form role="form"  id="contact-form" action="{{route('contact.store')}}" method="post">
                 @csrf
                 <div class="form-group">
                     <label for="name">Name</label>
